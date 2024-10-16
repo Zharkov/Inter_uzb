@@ -1,0 +1,800 @@
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+body {
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+
+body.page-exit {
+  opacity: 0;
+}
+
+header{
+  background: #006600;
+  position: relative;
+}
+
+.box{
+  opacity: 0;
+  transform: translateY(300px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.box.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+*, *:after, *:before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  transition: .5s ease-in-out;
+}
+
+  a, h1, h2, h3, h4, h5 {
+    color: #FFFFFF;
+    transform: scale(1);
+    text-decoration: none; 
+  }
+
+  h1 {
+    font-family: Prompt;
+    font-size: 37px;
+    font-weight: 600;
+    line-height: 55.5px;
+    text-align: left;
+  }
+
+  h2 {
+    font-family: Prompt;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    
+  }
+
+  h3 {
+    font-family: Prompt;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 39px;
+    text-align: left;
+
+  }
+
+  h4 {
+    font-family: Bitter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  h5{
+    font-family: Prompt;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: left;
+    color: black;
+
+  }
+
+  h6{
+    font-family: Prompt;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    text-align: center;
+    color: #006600;
+  }
+
+  .header__name{
+    padding-top: 33px;
+    padding-bottom: 23px;
+  }
+
+  .header_title {
+    padding-left: 60px;
+    padding-top: 46px;
+    /* padding-bottom: 39px; */
+    display: flex;
+    flex-direction: row;
+    list-style-type: none; 
+  }
+
+  .nav_header_title{
+    padding-right: 58px;
+  }
+
+  .nav {
+    height: 112px;
+  }
+
+  .toggles{
+    /* height: 700px; 
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: relative; */
+  }
+
+  .video-background {
+    zoom: 0.7;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    background-size: cover;
+}
+
+
+  .flags{
+    display: flex;
+    justify-content: center;
+    padding-top: 55px
+  }
+
+  .header_trade, .header_construction, .header_logistics, .header_contacts, .header_logistics_4pl, .header_logistics_full_truck_loads, 
+  .header_logistics_rail, .header_logistics_sea, .header_logistics_warehouse, .header_logistics_about {
+    height: 374px;
+    background-size: cover;
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat;
+  }
+
+  .header_logistics_about{
+    background-image: url('../img/header_logistics1.jpg'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_trade{
+    background-image: url('../img/header_trade.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_construction{
+    background-image: url('../img/header_construction.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_logistics{
+    background-image: url('../img/header_logistics.jpg'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_contacts{
+    background-image: url('../img/header_contacts.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_logistics_4pl{
+    background-image: url('../img/header_logistics_4pl.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_logistics_full_truck_loads{
+    background-image: url('../img/header_logistics_full_truck_loads.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_logistics_rail{
+    background-image: url('../img/header_logistics_rail.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_logistics_sea{
+    background-image: url('../img/header_logistics_sea.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_logistics_warehouse{
+    background-image: url('../img/header_logistics_warehouse.png'); /* Укажите путь к вашему изображению */
+  }
+
+  .header_info{
+    padding-top: 110px;
+    padding-bottom: 55px;
+  }
+
+  .header_text{
+    padding-top: 55px;
+    padding-bottom: 110px;
+  }
+
+  .head_info{
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .info{
+
+  }
+  
+  .head_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+
+.red-rectangle {
+    position: absolute; /* Позволяет позиционировать прямоугольник относительно родителя */
+    top: 173px; /* Расположение сверху */
+    /* bottom: 74px; Расположение снизу */
+    left: 0;
+    background-color: #006600; /* Цвет прямоугольника */
+    display: flex; /* Используем flexbox для центрирования текста */
+    flex-direction: column;
+    justify-content: center; /* Центрируем текст по горизонтали */
+    /* align-items: center; Центрируем текст по вертикали */
+    padding-left: 120px; /* Дополнительные отступы внутри прямоугольника, если нужно */
+    padding-right: 143px;
+    box-sizing: border-box; /* Включает padding в общую ширину и высоту */
+    z-index: 1; /* Убедитесь, что прямоугольник выше заднего фона */
+}
+
+.red-rectangle-index {
+  position: absolute; /* Позволяет позиционировать прямоугольник относительно родителя */
+  top: 40vh; /* Расположение сверху */
+  bottom: 10vh; /* Расположение снизу */
+  left: 0;
+  background-color: #006600; /* Цвет прямоугольника */
+  display: flex; /* Используем flexbox для центрирования текста */
+  flex-direction: column;
+  justify-content: center; /* Центрируем текст по горизонтали */
+  padding-left: 15vh; /* Дополнительные отступы внутри прямоугольника, если нужно */
+  padding-right: 143px;
+  box-sizing: border-box; /* Включает padding в общую ширину и высоту */
+  z-index: 1; /* Убедитесь, что прямоугольник выше заднего фона */
+}
+
+  .line {
+    height: 9px;
+    background-color:#006600; /* Цвет полоски */
+    width: 120%; /* Ширина полоски по ширине колонки */
+}
+  .head_img{
+    display: flex;
+    justify-content: flex-end;
+    height: 265px;
+  }
+
+  .trade_info_img{
+    display: flex;
+    justify-content: flex-end;
+    height: auto;
+  }
+
+  .header_unit {
+    padding-top: 55px;
+    padding-bottom: 55px;
+    background: #A79A926E;
+  }
+
+  .head_unit {
+    height: 290px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .constructions_unit{
+    padding-bottom: 23px;
+  }
+
+  .construction_unit{
+    height: 396px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 32px;
+    gap: 32px;
+  }
+
+  .head_unit2{
+    margin-left: 16px;
+  }
+
+  .head_unit1, .head_unit2, .construction_unit1, .construction_unit2, .construction_unit3, .construction_unit4{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+}
+
+  .construction_unit1{
+    background-image: url('../img/construction_unit1.png');
+  }
+
+  .construction_unit2{
+    background-image: url('../img/construction_unit2.png');
+  }
+
+  .construction_unit3{
+    background-image: url('../img/construction_unit3.png');
+  }
+
+  .construction_unit4{
+    background-image: url('../img/construction_unit4.png');
+  }
+
+  .head_unit1 {
+    background-image: url('../img/header_trade.png'); /* Укажите путь к изображению */
+  }
+
+  .head_unit1::after, .head_unit2::after, .head_unit3::after, 
+  .construction_unit1::after, .construction_unit2::after, .construction_unit3::after, .construction_unit4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0); /* Прозрачный красный фон */
+    transition: background-color 0.5s ease; /* Плавная анимация фона */
+    z-index: 0;
+  }
+
+
+  .head_unit1:hover::after, .head_unit2:hover::after, .head_unit3:hover::after,  
+  .construction_unit1:hover::after, .construction_unit2:hover::after, .construction_unit3:hover::after, .construction_unit4:hover::after{
+    background-color: #0066009E;
+  }
+
+  .head_unit1:hover .head_unit_extra-text, .head_unit2:hover .head_unit_extra-text, .head_unit3:hover .head_unit_extra-text, 
+  .construction_unit1:hover .construction_unit_extra-text, .construction_unit2:hover .construction_unit_extra-text, .construction_unit3:hover .construction_unit_extra-text, .construction_unit4:hover .construction_unit_extra-text {
+    display: block;
+    padding-top: 27px;
+  }
+
+
+  .head_unit2 {
+    background-image: url('../img/header_unit2.png'); /* Укажите путь к изображению */
+  }
+
+  .head_unit3 {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 290px;
+    background-image: url('../img/header_logistics.jpg');
+  }
+
+  .head_unit1_content, .head_unit2_content, .head_unit3_content, 
+  .construction_unit1_content, .construction_unit2_content, .construction_unit3_content, .construction_unit4_content {
+    padding-left: 36px; /* Отступ 36px от левого края */
+    padding-top: 36px;
+    position: relative;
+    color: white;
+    z-index: 1; /* Чтобы текст всегда был виден поверх фона */
+    transition: background-color 1s;
+  }
+
+  .head_unit_extra-text, .construction_unit_extra-text{
+    display: none;
+  }
+
+  .head_unit_box, .construction_unit_box {
+    position: relative;
+    font-size: 24px;
+    margin: 0;
+    display: inline-block; /* Позволяет прямоугольнику обтекать текст */
+    padding: 10px; /* Отступы вокруг текста */
+    background-color: #006600; /* Цвет прямоугольника */
+    z-index: 2; /* Убедитесь, что текст над фоном */
+    transition: color 1s;
+  }
+
+  .head_unit_box::after, .construction_unit_box::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100%; /* Устанавливаем слева от текста */
+    transform: translateY(-50%); /* Центрируем по вертикали */
+    height: 30px; /* Высота прямоугольника */
+    background-color: #006600; /* Цвет прямоугольника */
+    margin-left: 36px; /* Расстояние 36px от текста */
+  }
+
+  .head_unit1:hover .head_unit_box, .head_unit2:hover .head_unit_box, .head_unit3:hover .head_unit_box,
+  .construction_unit1:hover .construction_unit_box, .construction_unit2:hover .construction_unit_box, .construction_unit3:hover .construction_unit_box, .construction_unit4:hover .construction_unit_box 
+  {
+    background-color: white; /* Цвет фона при наведении */
+    color: #006600; /* Цвет текста при наведении */
+}
+
+  .feedback {
+    padding-top: 55px;
+  }
+
+  .feedback_head_text{
+
+  }
+
+  .feedback_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-field {
+    padding-top: 20px;
+}
+
+.text-field__input {
+    width: 410px;
+    height: 59px;
+
+}
+
+.btn-feedback, .download-btn {
+  width: 307px;
+  height: 50px;
+  background-color: #006600; /* Красный цвет фона */
+  color: white; /* Белый текст */
+  border: none;
+  border-radius: 5px; /* Слегка скругленные углы */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  line-height: 50px; /* Вертикальное центрирование текста */
+  transition: background-color 0.3s ease; /* Плавная смена фона при наведении */
+}
+
+/* Изменение цвета фона при наведении */
+.btn-feedback:hover, .download-btn:hover {
+  background-color: dark#006600; /* Более темный красный при наведении */
+}
+
+.feedback-cont__btn{
+
+}
+
+.feedback-cont {
+    padding-top: 20px;
+    padding-bottom: 94px;
+}
+
+.presentation{
+  background-color: #A79A926E;
+  padding-top: 55px;
+  padding-bottom: 110px
+}
+
+/* Стили для контейнера кнопки */
+.download-btn-container {
+  position: relative;
+  margin-top: 28px; /* Расстояние от верхней части */
+}
+
+
+.footer{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #006600;
+}
+
+.markets {
+  background-color: #A79A926E;
+}
+
+.markets_text{
+  padding-top: 55px;
+  padding-bottom: 32px;
+}
+
+/* Контейнер для галереи */
+.markets-gallery {
+  display: flex;
+  justify-content: space-between; /* Пространство между фотографиями */
+  margin-bottom: 32px; /* Отступы снизу */
+}
+
+/* Стили для каждого элемента (фото с текстом) */
+.markets-item {
+  position: relative;
+  width: 276px;
+  height: 236px;
+  background-color: #f0f0f0; /* Фон для блока, если фото не загрузится */
+}
+
+/* Стили для изображения */
+.markets-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Фото полностью заполняет блок */
+}
+
+.text_constucrion{
+  padding-top: 55px;
+  padding-bottom: 110px;
+}
+
+.counter{
+  padding-bottom: 55px;
+}
+
+.count_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.count{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count h4{
+  color: black;
+  padding-top: 14px;
+}
+
+.arrow{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 14px;
+}
+/* _____________________________________________________
+ */
+ .header {
+  padding-bottom: 0; /* По умолчанию */
+  transition: padding-bottom 0.3s ease; /* Плавный переход */
+}
+
+/*.header:hover {
+  padding-bottom: 100px; /* Увеличение отступа при наведении 
+}*/
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto; /* Подменю будет растягиваться на всю ширину */
+  background-color: #006600; /* Задний фон красного цвета */
+  z-index: 1000;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  display: block;
+  text-align: left;
+  padding: 10px;
+}
+
+.submenu li h4 {
+  margin: 0;
+  color: white; /* Белый цвет текста для лучшей читабельности */
+}
+
+
+.countries{
+  padding-top: 55px;
+  padding-bottom: 110px;
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag{
+  width: auto;
+  height: 10vh;
+}
+
+.country_name{
+  padding-bottom: 16px;
+}
+
+.country_address, .country_tel, .country_mail{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.map{
+
+}
+
+#map {
+  width: 100%;
+  height: 500px;
+}
+
+  .burger-menu{
+    display: none;
+  }
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  h4, h5, h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .line {
+    height: 5px;
+    width: 100%;
+  }
+
+  .header_title {
+    display: none;
+  }
+
+  .head_unit {
+    height: 400px;
+    flex-direction: column;
+}
+
+.offset-1 {
+  margin-left: 0%;
+}
+
+.markets-gallery {
+  margin-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.count_info {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.trade_info_img {
+  flex-direction: column;
+}
+
+.red-rectangle {
+  position: absolute;
+  top: 173px;
+  bottom: 74px;
+  left: 0;
+  background-color: #006600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 143px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.nav_header_title {
+  padding-right: 0px;
+}
+
+  .red-rectangle {
+    top: 10%;
+  }
+
+}
+
+
+#menu {
+  float: right;
+  
+}
+#menu li {
+  display: inline-block;
+  margin-right: 150px;
+}
+#menu a {
+  width: 100%; /* Элементы занимают всю ширину меню */
+  color: black;;
+  display: block;
+  line-height: 40px;
+}
+#menu a:hover {
+  color: black;
+}
+#menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-toggle {
+  display: none;
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 40px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.nav-toggle span {
+  display: block;
+  position: absolute;
+  top: 19px;
+  left: 8px;
+  right: 8px;
+  height: 2px;
+  background: black;
+}
+.nav-toggle span:before, .nav-toggle span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background:black;
+}
+.nav-toggle span:before {
+  top: -10px;
+}
+.nav-toggle span:after {
+  bottom: -10px;
+}
+/* класс, который будет добавлен в верхнему меню при нажатии на кнопку и покажет скрытое меню*/
+#menu.active {
+  max-height: 400px;
+}
+
+.nav-toggle.active {
+  padding-bottom: 430px;
+}
+
+@media (width <= 768px) {
+
+
+  .nav-toggle {
+    display: block;
+ }
+
+  #menu {
+    height: 500px;
+    width: 300px;
+    right: 0;
+    left: 40px;
+    max-height: 0;
+    float: none;
+    position: absolute;
+    overflow: hidden;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+  }
+}
+
+
+
+
+
+

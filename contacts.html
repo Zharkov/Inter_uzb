@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="description" content="HLD GROUP  - международная группа компаний с разветвеленной сетью представительств  в  России, Европе, Китае, США и странах Азии. Мы реализуем решения, полностью ориентированные на потребности клиента и комплексно управляем цепями поставок."/> -->
+    <title>HLD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.1/maps/maps.css'>
+    <link rel='stylesheet' type='text/css' href='../assets/ui-library/index.css'/>
+    <link rel="stylesheet" href="https://api.tomtom.com/maps-sdk-for-web/6.x/6.20.0/maps/maps.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 header__name">
+                    <a href="index.html">
+                        <h1 class="nav-content__title">HLD</h1>
+                    </a>
+                </div>
+                <div class="nav-toggle">
+                    <span></span>
+                    <ul id="menu">
+                        <li><a href="index.html">
+                            <h4 class="nav_header_title">ABOUT US</h4>
+                        </a></li>
+                        <li><a href="trade.html">
+                            <h4 class="nav_header_title">TRADE</h4>
+                        </a></li>
+                        <li><a href="construction.html">
+                            <h4 class="nav_header_title">CONSTRUCTION</h4>
+                        </a></li>
+                        <li class="dropdown">
+                            <a href="logistics.html" class="fa fa-angle-down">
+                                <h4 class="nav_header_title">LOGISTICS</h4>
+                            </a>
+                            <ul id="submenu">
+                                <li><a href="logistics_rail.html"><h4>RAIL</h4></a></li>
+                                <li><a href="logistics_sea&air.html"><h4>SEA & AIR</h4></a></li>
+                                <li><a href="logistics_full_truck_loads.html"><h4>FULL TRUCK LOADS</h4></a></li>
+                                <li><a href="logistics_warehouse.html"><h4>WAREHOUSE LOGISTICS</h4></a></li>
+                                <li><a href="logistics_4pl.html"><h4>4 PL</h4></a></li> 
+                            </ul>
+                        </li>
+                        <li><a href="contacts.html" class="menu-item">
+                            <h4 class="nav_header_title">CONTACTS</h4>
+                        </a></li>
+                    </ul>
+                </div>
+    
+                <ul class="col-md-8 header_title" id="header-nav">
+                    <li><a href="index.html">
+                        <h4 class="nav_header_title">ABOUT US</h4>
+                    </a></li>
+                    <li><a href="trade.html">
+                        <h4 class="nav_header_title">TRADE</h4>
+                    </a></li>
+                    <li><a href="construction.html">
+                        <h4 class="nav_header_title">CONSTRUCTION</h4>
+                    </a></li>
+                    <li class="dropdown">
+                        <a href="logistics.html" class="fa fa-angle-down">
+                            <h4 class="nav_header_title">LOGISTICS</h4>
+                        </a>
+                        <ul class="submenu">
+                            <li><a href="logistics_rail.html"><h4>RAIL</h4></a></li>
+                            <li><a href="logistics_sea&air.html"><h4>SEA & AIR</h4></a></li>
+                            <li><a href="logistics_full_truck_loads.html"><h4>FULL TRUCK LOADS</h4></a></li>
+                            <li><a href="logistics_warehouse.html"><h4>WAREHOUSE LOGISTICS</h4></a></li>
+                            <li><a href="logistics_4pl.html"><h4>4 PL</h4></a></li> 
+                        </ul>
+                    </li>
+                    <li><a href="contacts.html" class="menu-item">
+                        <h4 class="nav_header_title">CONTACTS</h4>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="header_contacts box">
+        <div class="container">
+            <div class="row">
+                <div class="head_contacts">
+                    <div class="red-rectangle">
+                        <h1>CONTACTS</h1>
+                        <h4>About us / Contacts</h4>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="countries box">
+                    <!-- <div class="country box">
+                        <div class="flags">
+                            <img class="flag" src="img/flags/1.png" alt="">
+                        </div>
+                        <div class="country_name">
+                            <h6>Hungary</h6>
+                        </div>
+                        <div class="country_address">
+                            <img src="img/dot_map.svg" alt="">
+                            <h4 style="color: black;">Address</h4>
+                        </div>
+                        <div class="country_tel">
+                            <img src="img/tel.svg" alt="">
+                            <h4 style="color: black;">Telephone</h4>
+                        </div>
+                        <div class="country_mail">
+                            <img src="img/mail.svg" alt="">
+                            <h4 style="color: black;">E-mail</h4>
+                        </div>
+                    </div> -->
+                    <!-- <div class="country box">
+                        <div class="flags">
+                            <img class="flag" src="img/flags/2.png" alt="">
+                        </div>
+                        <div class="country_name">
+                            <h6>Serbia</h6>
+                        </div>
+                        <div class="country_address">
+                            <img src="img/dot_map.svg" alt="">
+                            <h4 style="color: black;"> Subotica, Milutina Uskokovica br.54</h4>
+                        </div>
+                        <div class="country_tel">
+                            <img src="img/tel.svg" alt="">
+                            <h4 style="color: black;">+381611582060</h4>
+                        </div>
+                        <div class="country_mail">
+                            <img src="img/mail.svg" alt="">
+                            <h4 style="color: black;">hello@rcg.ltd</h4>
+                        </div>
+                    </div> -->
+                    <div class="country box">
+                        <div class="flags">
+                            <img class="flag" src="img/flags/3.png" alt="">
+                        </div>
+                        <div class="country_name">
+                            <h6>Uzbekistan</h6>
+                        </div>
+                        <div class="country_address">
+                            <img src="img/dot_map.svg" alt="">
+                            <h4 style="color: black;">Tashkent, Southern Industrial zone 154</h4>
+                        </div>
+                        <div class="country_tel">
+                            <img src="img/tel.svg" alt="">
+                            <h4 style="color: black;">Telephone</h4>
+                        </div>
+                        <div class="country_mail">
+                            <img src="img/mail.svg" alt="">
+                            <h4 style="color: black;">hello@rcg.ltd</h4>
+                        </div>
+                    </div>
+                    <!-- <div class="country box">
+                        <div class="flags">
+                            <img class="flag" src="img/flags/4.png" alt="">
+                        </div>
+                        <div class="country_name">
+                            <h6>Lithuania</h6>
+                        </div>
+                        <div class="country_address">
+                            <img src="img/dot_map.svg" alt="">
+                            <h4 style="color: black;">Address</h4>
+                        </div>
+                        <div class="country_tel">
+                            <img src="img/tel.svg" alt="">
+                            <h4 style="color: black;">Telephone</h4>
+                        </div>
+                        <div class="country_mail">
+                            <img src="img/mail.svg" alt="">
+                            <h4 style="color: black;">E-mail</h4>
+                        </div>
+                    </div>
+                    <div class="country box">
+                        <div class="flags">
+                            <img class="flag" src="img/flags/5.png" alt="">
+                        </div>
+                        <div class="country_name">
+                            <h6>Kyrgyzstan</h6>
+                        </div>
+                        <div class="country_address">
+                            <img src="img/dot_map.svg" alt="">
+                            <h4 style="color: black;">Address</h4>
+                        </div>
+                        <div class="country_tel">
+                            <img src="img/tel.svg" alt="">
+                            <h4 style="color: black;">Telephone</h4>
+                        </div>
+                        <div class="country_mail">
+                            <img src="img/mail.svg" alt="">
+                            <h4 style="color: black;">E-mail</h4>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map">
+        <div id="map" class="">
+            <script src="https://api.tomtom.com/maps-sdk-for-web/6.x/6.20.0/maps/maps-web.min.js"></script>
+            <script>
+                // Инициализация карты
+                var map = tt.map({
+                    key: 'FvZ1mL0qBS9veZ2AMxjAuAYNjqq4dORL', // Вставьте сюда ваш API-ключ
+                    container: 'map',
+                    center: [65, 48], // Центральная точка карты для отображения всех стран
+                    zoom: 2
+                });
+        
+                // Добавление контролов зума и ориентации
+                map.addControl(new tt.NavigationControl());
+        
+                // Координаты для стран Венгрия, Сербия и Литва
+                var locations = [
+              //  { name: "Hungary", coordinates: [19.5033, 47.1625] },
+              //  { name: "Serbia", coordinates: [21.0059, 44.0165] },
+               { name: "Uzbekistan", coordinates: [64.5853, 41.3775] },
+              //  { name: "Lithuania", coordinates: [23.8813, 55.1694] },
+              //  { name: "Kyrgyzstan", coordinates: [74.7661, 41.2044] }
+
+            ];
+        
+                // Функция добавления маркеров
+                locations.forEach(function(location) {
+                    var marker = new tt.Marker().setLngLat(location.coordinates).addTo(map);
+        
+                    // Добавляем всплывающую подсказку с названием страны
+                    var popup = new tt.Popup({ offset: 35 }).setText(location.name);
+                    marker.setPopup(popup).togglePopup();
+                });
+            </script>
+        </div>
+    </section>
+    <div id="footer" class=""></div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+   
+</body>
+</html>
